@@ -157,31 +157,45 @@ button:hover{
 
 <body>
 
-<h1>Simulation de phishing</h1>
+<div class="banner"></div>
+
+<div class="container">
+
+<div class="top">
+
+<div class="badge">
+Microsoft 365
+</div>
+
+<h1>
+Vérification de votre compte
+</h1>
 
 <p>
-Vous venez de participer à un exercice de sensibilisation
-à la cybersécurité.
+Dans le cadre de la mise à jour des services Microsoft 365,
+une vérification de votre compte est requise.
 </p>
 
-<p>
-Avant de cliquer sur un lien ou de scanner un QR Code,
-vérifiez toujours :
-</p>
+<div class="info">
 
-<ul style="display:inline-block;text-align:left">
-<li>L'expéditeur</li>
-<li>L'adresse du site</li>
-<li>Le contexte de la demande</li>
-</ul>
+Merci de confirmer votre identité afin de poursuivre l'accès
+aux services Microsoft 365.
 
-<p>
-Merci pour votre participation.
-</p>
+</div>
 
 <button id="continueButton" type="button">
-    Continuer
+Continuer
 </button>
+
+</div>
+
+<div class="footer">
+
+Cette opération ne prend qu'une minute.
+
+</div>
+
+</div>
 
 <script>
 document.getElementById("continueButton").addEventListener("click", function () {
