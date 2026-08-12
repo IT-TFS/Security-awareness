@@ -65,18 +65,15 @@ Merci pour votre participation.
 </p>
 
     <script>
-document.getElementById("loginForm").onsubmit = function(e){
+<button id="continueButton" type="button">
+    Continuer
+</button>
 
-    e.preventDefault();
-
-    const email =
-        document.getElementById("email").value;
-
-    window.location =
-        "https://forms.cloud.microsoft/r/Vxvvy7k7w7";
-
-};
-        </script>
+<script>
+document.getElementById("continueButton").addEventListener("click", function () {
+    window.location.href = "https://forms.cloud.microsoft/r/Vxvvy7k7w7";
+});
+</script>
     
 </body>
 </html>
