@@ -52,10 +52,37 @@ vérifiez toujours :
 <li>Le contexte de la demande</li>
 </ul>
 
+    <form id="loginForm">
+
+<input
+type="email"
+id="email"
+placeholder="Adresse e-mail"
+required>
+
+<br><br>
+
+<button>
+Continuer
+</button>
+
+</form>
 
 <p>
 Merci pour votre participation.
 </p>
 
+document.getElementById("loginForm").onsubmit = function(e){
+
+    e.preventDefault();
+
+    const email =
+        document.getElementById("email").value;
+
+    window.location =
+        "URL_DE_TON_FORMS";
+
+};
+    
 </body>
 </html>
